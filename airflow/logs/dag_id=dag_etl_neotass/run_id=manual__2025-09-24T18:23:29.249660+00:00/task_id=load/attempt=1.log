@@ -1,0 +1,69 @@
+[2025-09-24T18:24:02.046+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_etl_neotass.load manual__2025-09-24T18:23:29.249660+00:00 [queued]>
+[2025-09-24T18:24:02.191+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_etl_neotass.load manual__2025-09-24T18:23:29.249660+00:00 [queued]>
+[2025-09-24T18:24:02.196+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-09-24T18:24:02.382+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): load> on 2025-09-24 18:23:29.249660+00:00
+[2025-09-24T18:24:02.436+0000] {standard_task_runner.py:60} INFO - Started process 2347 to run task
+[2025-09-24T18:24:02.477+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_etl_neotass', 'load', 'manual__2025-09-24T18:23:29.249660+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_neotass.py', '--cfg-path', '/tmp/tmpmrxax_8z']
+[2025-09-24T18:24:02.499+0000] {standard_task_runner.py:88} INFO - Job 14: Subtask load
+[2025-09-24T18:24:02.842+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_etl_neotass.load manual__2025-09-24T18:23:29.249660+00:00 [running]> on host ac0d26cc69bb
+[2025-09-24T18:24:03.601+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_etl_neotass' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2025-09-24T18:23:29.249660+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-24T18:23:29.249660+00:00'
+[2025-09-24T18:24:04.489+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 733, in do_executemany
+    cursor.executemany(statement, parameters)
+sqlite3.OperationalError: table dim_parceiro has no column named telefone_parceiro
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_etl_neotass.py", line 116, in load
+    dim_parceiro_df_chunk.to_sql('dim_parceiro', con=engine, if_exists='append', index=False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 2878, in to_sql
+    return sql.to_sql(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 769, in to_sql
+    return pandas_sql.to_sql(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1920, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1470, in insert_records
+    raise err
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1461, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1023, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 929, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1385, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 733, in do_executemany
+    cursor.executemany(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table dim_parceiro has no column named telefone_parceiro
+[SQL: INSERT INTO dim_parceiro (nome_fantasia, cnpj_parceiro, telefone_parceiro, id_parceiro) VALUES (?, ?, ?, ?)]
+[parameters: (('Marques Ferreira Ltda.', '71.956.320/0001-68', '71 8373-4031', 71956320000168), ('Novaes', '52.346.709/0001-47', '0800-268-6025', 52346709000147), ('Cirino', '10.789.432/0001-87', '41 9524 9911', 10789432000187), ('Novais', '12.403.859/0001-20', '0900 376 1847', 12403859000120), ('Andrade', '15.863.492/0001-16', '(071) 2090 4217', 15863492000116), ('Albuquerque - ME', '18.296.475/0001-32', '+55 71 1027-6747', 18296475000132), ('Oliveira Gomes S.A.', '36.482.157/0001-48', '11 5803-0468', 36482157000148), ('Macedo', '10.423.769/0001-76', '(031) 9956 4122', 10423769000176)  ... displaying 10 of 326 total bound parameter sets ...  ('Pacheco Lopes e Filhos', '01.735.486/0001-79', '+55 84 6831 5893', 1735486000179), ('Fogaça Ltda.', '23.496.851/0001-72', '+55 11 8361-5171', 23496851000172))]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2025-09-24T18:24:04.629+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_etl_neotass, task_id=load, execution_date=20250924T182329, start_date=20250924T182402, end_date=20250924T182404
+[2025-09-24T18:24:04.712+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 14 for task load ((sqlite3.OperationalError) table dim_parceiro has no column named telefone_parceiro
+[SQL: INSERT INTO dim_parceiro (nome_fantasia, cnpj_parceiro, telefone_parceiro, id_parceiro) VALUES (?, ?, ?, ?)]
+[parameters: (('Marques Ferreira Ltda.', '71.956.320/0001-68', '71 8373-4031', 71956320000168), ('Novaes', '52.346.709/0001-47', '0800-268-6025', 52346709000147), ('Cirino', '10.789.432/0001-87', '41 9524 9911', 10789432000187), ('Novais', '12.403.859/0001-20', '0900 376 1847', 12403859000120), ('Andrade', '15.863.492/0001-16', '(071) 2090 4217', 15863492000116), ('Albuquerque - ME', '18.296.475/0001-32', '+55 71 1027-6747', 18296475000132), ('Oliveira Gomes S.A.', '36.482.157/0001-48', '11 5803-0468', 36482157000148), ('Macedo', '10.423.769/0001-76', '(031) 9956 4122', 10423769000176)  ... displaying 10 of 326 total bound parameter sets ...  ('Pacheco Lopes e Filhos', '01.735.486/0001-79', '+55 84 6831 5893', 1735486000179), ('Fogaça Ltda.', '23.496.851/0001-72', '+55 11 8361-5171', 23496851000172))]
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 2347)
+[2025-09-24T18:24:04.794+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-09-24T18:24:05.000+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

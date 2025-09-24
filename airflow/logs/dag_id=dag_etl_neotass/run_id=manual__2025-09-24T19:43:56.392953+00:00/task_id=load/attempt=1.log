@@ -1,0 +1,60 @@
+[2025-09-24T19:44:47.009+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_etl_neotass.load manual__2025-09-24T19:43:56.392953+00:00 [queued]>
+[2025-09-24T19:44:47.048+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_etl_neotass.load manual__2025-09-24T19:43:56.392953+00:00 [queued]>
+[2025-09-24T19:44:47.050+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-09-24T19:44:47.184+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): load> on 2025-09-24 19:43:56.392953+00:00
+[2025-09-24T19:44:47.254+0000] {standard_task_runner.py:60} INFO - Started process 3112 to run task
+[2025-09-24T19:44:47.323+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_etl_neotass', 'load', 'manual__2025-09-24T19:43:56.392953+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_neotass.py', '--cfg-path', '/tmp/tmpye7fp1v3']
+[2025-09-24T19:44:47.332+0000] {standard_task_runner.py:88} INFO - Job 24: Subtask load
+[2025-09-24T19:44:48.158+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_etl_neotass.load manual__2025-09-24T19:43:56.392953+00:00 [running]> on host ad6d7be6e1d5
+[2025-09-24T19:44:49.334+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_etl_neotass' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2025-09-24T19:43:56.392953+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-24T19:43:56.392953+00:00'
+[2025-09-24T19:44:50.942+0000] {logging_mixin.py:188} INFO - Inserted 326 rows into dim_parceiro
+[2025-09-24T19:44:50.988+0000] {logging_mixin.py:188} INFO - Inserted 53 rows into dim_produto
+[2025-09-24T19:44:51.695+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_registro_oportunidade
+[2025-09-24T19:44:51.802+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_registro_oportunidade
+[2025-09-24T19:44:51.912+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_registro_oportunidade
+[2025-09-24T19:44:51.997+0000] {logging_mixin.py:188} INFO - Erro na inserção: (sqlite3.IntegrityError) UNIQUE constraint failed: fato_registro_oportunidade.id_oportunidade
+[SQL: INSERT INTO fato_registro_oportunidade (id_oportunidade, id_parceiro, id_produto, data_registro, quantidade, valor_total, status) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ((15683, 67035914000169, 7, '2023-08-23', 43, 93807.08, 'Fechada'), (15686, 82760543000171, 7, '2024-06-18', 81, 176706.36, 'Aberta'), (15719, 82593406000190, 7, '2023-07-25', 79, 172343.24, 'Fechada'), (15949, 69235417000130, 7, '2024-03-08', 88, 191977.28, 'Aberta'), (15971, 50698472000138, 7, '2023-03-15', 90, 196340.4, 'Aberta'), (16046, 27613948000179, 7, '2023-03-19', 63, 137438.28, 'Fechada'), (16056, 28597364000110, 7, '2023-09-16', 10, 21815.6, 'Fechada'), (16098, 14320856000159, 7, '2023-07-08', 19, 41449.64, 'Fechada')  ... displaying 10 of 1000 total bound parameter sets ...  (4231, 15072963000178, 39, '2023-12-05', 5, 16880.45, 'Perdida'), (4246, 53879426000123, 9, '2023-12-19', 72, 142153.19999999998, 'Aberta'))]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+[2025-09-24T19:44:53.438+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:53.615+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:53.763+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:53.957+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:54.058+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:54.157+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:54.325+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:54.414+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:54.509+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:54.621+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:54.701+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:54.804+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:54.893+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:55.001+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:55.094+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:55.271+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:55.423+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:55.542+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:55.695+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:55.814+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:55.953+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:56.034+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:56.115+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:56.184+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:56.266+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:56.354+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:56.443+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:56.542+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:56.654+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:56.734+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:56.835+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:56.948+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:57.034+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:57.147+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:57.302+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:57.441+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:57.627+0000] {logging_mixin.py:188} INFO - Inserted 1000 rows into fato_sellout
+[2025-09-24T19:44:57.840+0000] {logging_mixin.py:188} INFO - Inserted 773 rows into fato_sellout
+[2025-09-24T19:44:57.854+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-09-24T19:44:57.923+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dag_etl_neotass, task_id=load, execution_date=20250924T194356, start_date=20250924T194447, end_date=20250924T194457
+[2025-09-24T19:44:58.059+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-09-24T19:44:58.192+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

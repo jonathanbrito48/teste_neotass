@@ -1,0 +1,59 @@
+[2025-09-24T04:01:03.086+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_etl.transform scheduled__2025-09-23T00:00:00+00:00 [queued]>
+[2025-09-24T04:01:03.317+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_etl.transform scheduled__2025-09-23T00:00:00+00:00 [queued]>
+[2025-09-24T04:01:03.325+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2025-09-24T04:01:03.578+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform> on 2025-09-23 00:00:00+00:00
+[2025-09-24T04:01:03.620+0000] {standard_task_runner.py:60} INFO - Started process 8047 to run task
+[2025-09-24T04:01:03.656+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_etl', 'transform', 'scheduled__2025-09-23T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_neotass.py', '--cfg-path', '/tmp/tmpvscx01l2']
+[2025-09-24T04:01:03.671+0000] {standard_task_runner.py:88} INFO - Job 5: Subtask transform
+[2025-09-24T04:01:04.280+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_etl.transform scheduled__2025-09-23T00:00:00+00:00 [running]> on host c26bc00dd9a9
+[2025-09-24T04:01:05.173+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_etl' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2025-09-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-23T00:00:00+00:00'
+[2025-09-24T04:01:05.214+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: transform() missing 2 required positional arguments: 'data_oportunidades' and 'data_sellout'
+[2025-09-24T04:01:05.380+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=dag_etl, task_id=transform, execution_date=20250923T000000, start_date=20250924T040103, end_date=20250924T040105
+[2025-09-24T04:01:05.798+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 5 for task transform (transform() missing 2 required positional arguments: 'data_oportunidades' and 'data_sellout'; 8047)
+[2025-09-24T04:01:06.066+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-09-24T04:01:06.493+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-24T14:44:01.523+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_etl.transform scheduled__2025-09-23T00:00:00+00:00 [queued]>
+[2025-09-24T14:44:01.595+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_etl.transform scheduled__2025-09-23T00:00:00+00:00 [queued]>
+[2025-09-24T14:44:01.803+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2025-09-24T14:44:02.118+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform> on 2025-09-23 00:00:00+00:00
+[2025-09-24T14:44:02.185+0000] {standard_task_runner.py:60} INFO - Started process 5406 to run task
+[2025-09-24T14:44:03.322+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_etl', 'transform', 'scheduled__2025-09-23T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/dag_etl_neotass.py', '--cfg-path', '/tmp/tmpdykw56zj']
+[2025-09-24T14:44:03.413+0000] {standard_task_runner.py:88} INFO - Job 4: Subtask transform
+[2025-09-24T14:44:04.319+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_etl.transform scheduled__2025-09-23T00:00:00+00:00 [running]> on host 4fcf806a1155
+[2025-09-24T14:44:07.187+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_etl' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2025-09-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-23T00:00:00+00:00'
+[2025-09-24T14:44:17.011+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/dag_etl_neotass.py:80 SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2025-09-24T14:44:17.014+0000] {logging_mixin.py:188} INFO - Directory already exists
+[2025-09-24T14:44:17.021+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_etl_neotass.py", line 91, in transform
+    dim_parceiro.to_csv('/opt/airflow/data_warehouse/dim_parceiro.csv', index=False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 3772, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/formats/format.py", line 1186, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/formats/csvs.py", line 240, in save
+    with get_handle(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/common.py", line 859, in get_handle
+    handle = open(
+PermissionError: [Errno 13] Permission denied: '/opt/airflow/data_warehouse/dim_parceiro.csv'
+[2025-09-24T14:44:17.083+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=dag_etl, task_id=transform, execution_date=20250923T000000, start_date=20250924T144401, end_date=20250924T144417
+[2025-09-24T14:44:17.140+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 4 for task transform ([Errno 13] Permission denied: '/opt/airflow/data_warehouse/dim_parceiro.csv'; 5406)
+[2025-09-24T14:44:17.678+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-09-24T14:44:17.992+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

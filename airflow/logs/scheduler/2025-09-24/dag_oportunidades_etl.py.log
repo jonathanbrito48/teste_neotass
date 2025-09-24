@@ -1,0 +1,289 @@
+[2025-09-24T02:52:21.413+0000] {processor.py:161} INFO - Started process (PID=214) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:52:21.437+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:52:21.453+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:52:21.448+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:52:21.523+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:52:21.508+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:52:21.530+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:52:22.242+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.899 seconds
+[2025-09-24T02:54:04.832+0000] {processor.py:161} INFO - Started process (PID=484) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:54:04.845+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:54:04.857+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:54:04.852+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:54:04.890+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:54:04.885+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:54:04.896+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:54:05.086+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.312 seconds
+[2025-09-24T02:54:40.499+0000] {processor.py:161} INFO - Started process (PID=647) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:54:40.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:54:40.528+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:54:40.525+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:54:40.558+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:54:40.553+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:54:40.565+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:54:40.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.492 seconds
+[2025-09-24T02:55:19.615+0000] {processor.py:161} INFO - Started process (PID=875) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:55:19.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:55:19.644+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:55:19.642+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:55:19.670+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:55:19.661+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:55:19.680+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:55:20.063+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.534 seconds
+[2025-09-24T02:55:55.740+0000] {processor.py:161} INFO - Started process (PID=1110) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:55:55.751+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:55:55.761+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:55:55.759+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:55:55.785+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:55:55.781+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:55:55.788+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:55:55.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.290 seconds
+[2025-09-24T02:56:29.980+0000] {processor.py:161} INFO - Started process (PID=1351) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:56:29.994+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:56:30.010+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:56:30.002+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:56:30.055+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:56:30.047+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:56:30.072+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:56:30.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.313 seconds
+[2025-09-24T02:57:03.317+0000] {processor.py:161} INFO - Started process (PID=1605) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:57:03.322+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:57:03.330+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:57:03.328+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:57:03.351+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:57:03.347+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:57:03.353+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:57:03.492+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.195 seconds
+[2025-09-24T02:57:40.549+0000] {processor.py:161} INFO - Started process (PID=1855) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:57:40.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:57:40.571+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:57:40.566+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:57:40.609+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:57:40.602+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:57:40.611+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:57:40.842+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.313 seconds
+[2025-09-24T02:58:11.237+0000] {processor.py:161} INFO - Started process (PID=2049) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:58:11.245+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:58:11.254+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:58:11.252+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:58:11.273+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:58:11.267+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:58:11.276+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:58:11.417+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.228 seconds
+[2025-09-24T02:58:48.502+0000] {processor.py:161} INFO - Started process (PID=2312) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:58:48.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:58:48.535+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:58:48.530+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:58:48.590+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:58:48.585+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:58:48.593+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:58:48.745+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.280 seconds
+[2025-09-24T02:59:21.772+0000] {processor.py:161} INFO - Started process (PID=2559) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:59:21.790+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:59:21.808+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:59:21.803+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:59:21.917+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:59:21.866+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:59:21.920+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:59:22.359+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.677 seconds
+[2025-09-24T02:59:53.347+0000] {processor.py:161} INFO - Started process (PID=2816) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:59:53.357+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T02:59:53.360+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:59:53.359+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:59:53.372+0000] {logging_mixin.py:188} INFO - [2025-09-24T02:59:53.369+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T02:59:53.373+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T02:59:53.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.112 seconds
+[2025-09-24T03:00:24.187+0000] {processor.py:161} INFO - Started process (PID=3073) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:00:24.189+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T03:00:24.192+0000] {logging_mixin.py:188} INFO - [2025-09-24T03:00:24.191+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:00:24.199+0000] {logging_mixin.py:188} INFO - [2025-09-24T03:00:24.198+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T03:00:24.200+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:00:24.249+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.070 seconds
+[2025-09-24T03:01:01.728+0000] {processor.py:161} INFO - Started process (PID=3322) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:01:01.739+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T03:01:01.757+0000] {logging_mixin.py:188} INFO - [2025-09-24T03:01:01.753+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:01:01.798+0000] {logging_mixin.py:188} INFO - [2025-09-24T03:01:01.789+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T03:01:01.803+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:01:02.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.582 seconds
+[2025-09-24T03:01:48.462+0000] {processor.py:161} INFO - Started process (PID=3544) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:01:48.529+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T03:01:48.626+0000] {logging_mixin.py:188} INFO - [2025-09-24T03:01:48.587+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:01:49.095+0000] {logging_mixin.py:188} INFO - [2025-09-24T03:01:49.057+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T03:01:49.114+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:01:49.436+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 1.403 seconds
+[2025-09-24T03:02:34.730+0000] {processor.py:161} INFO - Started process (PID=3682) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:02:34.741+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T03:02:34.748+0000] {logging_mixin.py:188} INFO - [2025-09-24T03:02:34.745+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:02:34.771+0000] {logging_mixin.py:188} INFO - [2025-09-24T03:02:34.765+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T03:02:34.774+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:02:35.200+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 0.659 seconds
+[2025-09-24T03:03:09.472+0000] {processor.py:161} INFO - Started process (PID=3839) to work on /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:03:09.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_oportunidades_etl.py for tasks to queue
+[2025-09-24T03:03:09.541+0000] {logging_mixin.py:188} INFO - [2025-09-24T03:03:09.529+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:03:09.685+0000] {logging_mixin.py:188} INFO - [2025-09-24T03:03:09.641+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag_oportunidades_etl.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_oportunidades_etl.py", line 78
+    pass
+    ^
+IndentationError: expected an indented block
+[2025-09-24T03:03:09.702+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_oportunidades_etl.py
+[2025-09-24T03:03:10.412+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_oportunidades_etl.py took 1.090 seconds
