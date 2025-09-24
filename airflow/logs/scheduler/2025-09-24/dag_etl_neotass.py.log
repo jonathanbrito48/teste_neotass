@@ -5771,3 +5771,31 @@ SyntaxError: invalid syntax
 [2025-09-24T21:41:52.466+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:41:52.465+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-09-24T21:41:52.562+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:41:52.558+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_etl_neotass to 2025-09-24 00:00:00+00:00, run_after=2025-09-25 00:00:00+00:00
 [2025-09-24T21:41:52.718+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_etl_neotass.py took 0.454 seconds
+[2025-09-24T21:42:26.659+0000] {processor.py:161} INFO - Started process (PID=46031) to work on /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:42:26.663+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_etl_neotass.py for tasks to queue
+[2025-09-24T21:42:26.667+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:42:26.666+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:42:26.753+0000] {processor.py:840} INFO - DAG(s) 'dag_etl_neotass' retrieved from /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:42:26.886+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:42:26.885+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-24T21:42:26.991+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:42:26.990+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_etl_neotass to 2025-09-24 00:00:00+00:00, run_after=2025-09-25 00:00:00+00:00
+[2025-09-24T21:42:27.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_etl_neotass.py took 0.514 seconds
+[2025-09-24T21:42:58.223+0000] {processor.py:161} INFO - Started process (PID=46283) to work on /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:42:58.231+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_etl_neotass.py for tasks to queue
+[2025-09-24T21:42:58.233+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:42:58.232+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:42:58.266+0000] {processor.py:840} INFO - DAG(s) 'dag_etl_neotass' retrieved from /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:42:58.324+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:42:58.324+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-24T21:42:58.433+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:42:58.432+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_etl_neotass to 2025-09-24 00:00:00+00:00, run_after=2025-09-25 00:00:00+00:00
+[2025-09-24T21:42:58.501+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_etl_neotass.py took 0.293 seconds
+[2025-09-24T21:43:31.890+0000] {processor.py:161} INFO - Started process (PID=46513) to work on /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:43:31.895+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_etl_neotass.py for tasks to queue
+[2025-09-24T21:43:31.900+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:43:31.899+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:43:32.063+0000] {processor.py:840} INFO - DAG(s) 'dag_etl_neotass' retrieved from /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:43:32.209+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:43:32.208+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-24T21:43:32.331+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:43:32.330+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_etl_neotass to 2025-09-24 00:00:00+00:00, run_after=2025-09-25 00:00:00+00:00
+[2025-09-24T21:43:32.435+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_etl_neotass.py took 0.586 seconds
+[2025-09-24T21:44:02.912+0000] {processor.py:161} INFO - Started process (PID=46767) to work on /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:44:02.915+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_etl_neotass.py for tasks to queue
+[2025-09-24T21:44:02.920+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:44:02.918+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:44:02.946+0000] {processor.py:840} INFO - DAG(s) 'dag_etl_neotass' retrieved from /opt/airflow/dags/dag_etl_neotass.py
+[2025-09-24T21:44:03.002+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:44:03.001+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-09-24T21:44:03.090+0000] {logging_mixin.py:188} INFO - [2025-09-24T21:44:03.090+0000] {dag.py:3823} INFO - Setting next_dagrun for dag_etl_neotass to 2025-09-24 00:00:00+00:00, run_after=2025-09-25 00:00:00+00:00
+[2025-09-24T21:44:03.138+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_etl_neotass.py took 0.236 seconds
