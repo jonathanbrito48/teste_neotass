@@ -105,10 +105,8 @@ with DAG(
         from sqlalchemy import text
         import os
 
-        # Garante que o diretório existe
         db_dir = '/opt/airflow/dags/data_warehouse'
         os.makedirs(db_dir, exist_ok=True)
-        # Garante que o banco e as tabelas existem
         Base.metadata.create_all(engine)
 
         dim_parceiro_df = pd.read_csv('/opt/airflow/dags/data_warehouse/dim_parceiro.csv')
