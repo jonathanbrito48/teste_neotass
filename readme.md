@@ -83,6 +83,12 @@ Se estiver usando Docker Compose, siga os passos abaixo:
 
 Acesse o Airflow Web UI em `http://localhost:8080`.
 
+**Login padrão do Airflow:**
+- Usuário: `airflow`
+- Senha: `airflow`
+
+Caso tenha alterado o usuário/senha no seu `docker-compose` ou variáveis de ambiente, utilize as credenciais configuradas.
+
 ### 6. Executar a DAG
 
 No Airflow Web UI, habilite e execute a DAG chamada `dag_etl_neotass`.
