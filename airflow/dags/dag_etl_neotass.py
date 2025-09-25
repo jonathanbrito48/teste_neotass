@@ -1,5 +1,6 @@
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
+from airflow.operators.bash import BashOperator
 from datetime import datetime, timedelta
 import os
 
@@ -98,11 +99,17 @@ with DAG(
 
 
     def load():
-        from data_warehouse.models import engine, SessionLocal
+        from data_warehouse.models import engine, SessionLocal, Base
         import pandas as pd
         from sqlalchemy.exc import SQLAlchemyError
         from sqlalchemy import text
+        import os
 
+        # Garante que o diretório existe
+        db_dir = '/opt/airflow/dags/data_warehouse'
+        os.makedirs(db_dir, exist_ok=True)
+        # Garante que o banco e as tabelas existem
+        Base.metadata.create_all(engine)
 
         dim_parceiro_df = pd.read_csv('/opt/airflow/dags/data_warehouse/dim_parceiro.csv')
         dim_produto_df = pd.read_csv('/opt/airflow/dags/data_warehouse/dim_produto.csv')
@@ -134,7 +141,9 @@ with DAG(
             print(f"Erro na inserção: {e}")
 
         finally:
+            os.remove('/opt/airflow/dags/data_warehouse/dim_parceiro.csv')
             session.close()
+
 
         try:
             dados_chunk = []
@@ -157,6 +166,7 @@ with DAG(
             print(f"Erro na inserção: {e}")
 
         finally:
+            os.remove('/opt/airflow/dags/data_warehouse/dim_produto.csv')
             session.close()
 
         try:
@@ -180,6 +190,7 @@ with DAG(
             print(f"Erro na inserção: {e}")
 
         finally:
+            os.remove('/opt/airflow/dags/data_warehouse/fato_registro_oportunidade.csv')
             session.close()
 
         try:
@@ -202,6 +213,7 @@ with DAG(
             session.rollback()
             print(f"Erro na inserção: {e}")
         finally:
+            os.remove('/opt/airflow/dags/data_warehouse/fato_sellout.csv')
             session.close()
 
     transform_task = PythonOperator(

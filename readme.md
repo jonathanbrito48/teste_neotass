@@ -1,4 +1,4 @@
-# Projeto ETL Data Warehouse com Airflow
+# Projeto ETL Neotass com Airflow e Docker Compose
 
 Este projeto realiza o processo ETL (Extract, Transform, Load) de dados de oportunidades e vendas (sellout) utilizando Apache Airflow, pandas e SQLAlchemy, armazenando os dados em um data warehouse SQLite.
 
@@ -21,7 +21,7 @@ Este projeto realiza o processo ETL (Extract, Transform, Load) de dados de oport
 ### 1. Clonar o repositório
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/jonathanbrito48/teste_neotass.git
 cd teste_neotass
 ```
 
@@ -95,7 +95,29 @@ Os arquivos CSV gerados estarão em `airflow/dags/data_warehouse/`:
 - `fato_registro_oportunidade.csv`
 - `fato_sellout.csv`
 
-O banco SQLite `data_warehouse.db` será populado com os dados transformados.
+**Banco de Dados Integrado:**  
+Os dados transformados são carregados em um banco de dados SQLite localizado em:
+
+```
+airflow/dags/data_warehouse/data_warehouse.db
+```
+
+Esse arquivo representa o Data Warehouse (DW) do projeto.
+
+### 8. Validar e Visualizar o Data Warehouse
+
+Você pode validar e explorar os dados carregados no banco SQLite utilizando ferramentas como:
+
+- **DBeaver**: Ferramenta gratuita e multiplataforma para explorar bancos de dados. Basta abrir o arquivo `data_warehouse.db` como um banco SQLite.
+- **VS Code**: Com a extensão "SQLite" instalada, você pode abrir e consultar o banco diretamente pelo editor.
+- **CLI**: Usando o comando abaixo para acessar o banco via terminal:
+  ```bash
+  sqlite3 airflow/dags/data_warehouse/data_warehouse.db
+  ```
+  E então executar comandos SQL, por exemplo:
+  ```sql
+  SELECT * FROM dim_parceiro LIMIT 10;
+  ```
 
 ## Observações
 

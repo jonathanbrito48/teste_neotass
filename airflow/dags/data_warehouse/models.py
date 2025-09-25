@@ -5,7 +5,7 @@ import os
 from contextlib import contextmanager
 
 
-engine = create_engine('sqlite:///data_warehouse.db', echo=False)
+engine = create_engine('sqlite:////opt/airflow/dags/data_warehouse/data_warehouse.db', echo=False)
 metadata = MetaData()
 Session = sessionmaker(bind=engine)
 session = Session()
@@ -60,7 +60,7 @@ class fato_sellout(Base):
         return f"<fato_sellout(id='{self.id_sellout}')>"
 
 # Base.metadata.drop_all(engine)
-Base.metadata.create_all(engine)
+# Base.metadata.create_all(engine)
 
 SessionLocal = sessionmaker(autoflush=False, autocommit=False, bind=engine)
 
